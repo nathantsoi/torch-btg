@@ -48,11 +48,28 @@ criterion = accuracy_loss()
 ### Setup
 
 ```
-python -m pip install --user tox
+python3 -m pip install --user tox
+python3 -m pip install --upgrade build
+python3 -m pip install --upgrade twine
 ```
 
-Then run tests with:
+#### Run tests
 
 ```
 tox
 ```
+
+#### Build
+
+```
+python3 -m build
+```
+
+#### Publish
+
+```
+python3 -m twine upload --repository pypi dist/*
+```
+
+Username: `__token__`
+Password: `[the api key from pypi.org starting with pypi-]`
