@@ -1,6 +1,7 @@
 [build-system]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
-requires = ["hatchling>=0.22", "hatch-vcs>=0.2"]
+
 
 [project]
 name = "torch-btg"
